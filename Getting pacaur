@@ -1,0 +1,4 @@
+# this is just a sudo command:
+sudo pacman -S pacaur
+# to check for existing programs: 
+pacman -Q [program name]
