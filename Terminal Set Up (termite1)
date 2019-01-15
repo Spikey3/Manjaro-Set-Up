@@ -1,29 +1,13 @@
 # Install termite:
 pacaur -S termite
 
-# i3 will want to use 'sensible terminal' to choose it's terminal so that is what you should change
-# go to /bin/i3-sensible-terminal
-# This is what it should look like:
-
+#  Go to /bin/terminal
+#  You may need to create this
+#  The file should look like this:
 
 #!/bin/sh
-#
-# This code is released in public domain by Han Boetes <han@mijncomputer.nl>
-#
-# This script tries to exec a terminal emulator by trying some known terminal
-# emulators.
-#
-# We welcome patches that add distribution-specific mechanisms to find the
-# preferred terminal emulator. On Debian, there is the x-terminal-emulator
-# symlink for example.
-for terminal in "$TERMINAL" x-terminal-emulator urxvt rxvt termit terminator Eterm aterm uxterm xterm gnome-terminal roxterm xfce4-terminal termite lxterminal mate-terminal terminology st qterminal lilyterm tilix terminix konsole kitty guake tilda alacritty hyper; do
-    if command -v "$terminal" > /dev/null 2>&1; then
-        exec "$terminal" "$@"
-    fi
-done
 
-i3-nagbar -m 'i3-sensible-terminal could not find a terminal emulator. Please install one.'
-
+termite
 
 # There seem to be alternative methods mentioned online, here are some recources:
 # https://wiki.archlinux.org/index.php/termite
