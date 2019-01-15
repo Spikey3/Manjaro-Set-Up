@@ -1,0 +1,6 @@
+# This requires that termite and zsh are alread set up
+
+# Install powerline fonts:
+pacaur -S powerline-fonts
+
+# Go to ~/.zshrc
