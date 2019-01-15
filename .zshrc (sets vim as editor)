@@ -1,0 +1,5 @@
+# Add these lines to the end
+
+export EDITOR=vim
+alias vi=vim
+alias py=python3
